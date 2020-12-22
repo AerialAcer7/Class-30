@@ -9,4 +9,8 @@ class Bird extends BaseClass {
     //this.body.position.y = mouseY;
     super.display();
   }
+
+  move(){
+    Matter.Body.setVelocity(this.body,{x:4,y:-4})
+  }
 }
